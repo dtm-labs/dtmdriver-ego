@@ -50,7 +50,7 @@ func invokerGrpc() error {
 func callGrpc() error {
 	gid := dtmgrpc.MustGenGid(dtmServer)
 	msg := dtmgrpc.NewMsgGrpc(dtmServer, gid).
-		Add(busiServer+"/trans.TransSvc/TransOut", &busi.BusiReq{Amount: 30, UserId: 1}).
-		Add(busiServer+"/trans.TransSvc/TransIn", &busi.BusiReq{Amount: 30, UserId: 2})
+		Add(busiServer+"/busi.Busi/TransIn", &busi.BusiReq{Amount: 30, UserId: 1}).
+		Add(busiServer+"/busi.Busi/TransOut", &busi.BusiReq{Amount: 30, UserId: 2})
 	return msg.Submit()
 }

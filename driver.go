@@ -69,8 +69,7 @@ func (e *egoDriver) ParseServerMethod(uri string) (server string, method string,
 	if err != nil {
 		return "", "", nil
 	}
-	index := strings.IndexByte(u.Path[1:], '/') + 1
-	return u.Scheme + "://" + u.Host, u.Path[index:], nil
+	return u.Scheme + ":///" + u.Host, u.Path, nil
 }
 
 func init() {
