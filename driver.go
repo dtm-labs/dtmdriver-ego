@@ -112,7 +112,8 @@ func (e *egoDriver) RegisterService(target string, endpoint string) error {
 		buf.WriteString(fmt.Sprintf("\n[registry]\nscheme = \"%s\"", u.Scheme))
 		econf.LoadFromReader(buf, toml.Unmarshal)
 
-		reg = registry.Load("registry").Build(registry.WithClientEtcd(eetcd.Load("etcd").Build()))
+		reg = registry.Load("registry").Build(registry.WithClientEtcd(eetcd.Load(u.Scheme).Build()))
+		registerMap[u.Scheme] = reg
 	case KindK8S:
 		conf := ek8s.DefaultConfig()
 		conf.Addr = u.Host
@@ -140,6 +141,7 @@ func (e *egoDriver) RegisterService(target string, endpoint string) error {
 		econf.LoadFromReader(buf, toml.Unmarshal)
 
 		reg = k8sregistry.Load("registry").Build(k8sregistry.WithClient(ek8s.Load(u.Scheme).Build()))
+		registerMap[u.Scheme] = reg
 	}
 
 	if reg != nil {
