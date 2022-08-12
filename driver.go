@@ -11,6 +11,7 @@ import (
 	"github.com/gotomicro/ego/core/constant"
 	"github.com/gotomicro/ego/core/eregistry"
 	"github.com/gotomicro/ego/server"
+	_ "github.com/vicnoah/dtmdriver-ego/dsn"
 	"github.com/vicnoah/dtmdriver-ego/manager"
 )
 
