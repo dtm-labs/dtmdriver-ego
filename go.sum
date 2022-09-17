@@ -316,8 +316,8 @@ github.com/gorilla/websocket v1.4.2/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/ad
 github.com/gorilla/websocket v1.5.0/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
 github.com/gotomicro/ego v0.6.14/go.mod h1:M9cmJ6sum7GP0IQ25MxATQjVEYObgam6SS82wp/g7C4=
 github.com/gotomicro/ego v0.8.0/go.mod h1:eQDInBi4IrfrwctWZZTQmtWTBYrSVgJ0arwx2WE48ag=
-github.com/gotomicro/ego v1.1.4 h1:Ro4kfL4YEZFs5yHHYHg2kLBZ7gwfWlxV7YLVjtcEGXE=
-github.com/gotomicro/ego v1.1.4/go.mod h1:vHAfoVmngjJCC2eRfP7weWeLxs46QpWok2y7PmU0NF0=
+github.com/gotomicro/ego v1.1.5 h1:pmnJ/Raiff+BOfAHg49imEjqN9cLuOk54RU4Z7NjJKs=
+github.com/gotomicro/ego v1.1.5/go.mod h1:vHAfoVmngjJCC2eRfP7weWeLxs46QpWok2y7PmU0NF0=
 github.com/gotomicro/ego-component/eetcd v0.2.3 h1:spJz3dFPis8UBTDNINweIvxOktIYDrlonrymeIdkm6Y=
 github.com/gotomicro/ego-component/eetcd v0.2.3/go.mod h1:8GJIWiHBVKd8oP9BoB4vz50oBF6AsjZhbfog0NwgUHY=
 github.com/gotomicro/ego-component/ek8s v0.2.3 h1:C6r9vPQelai7DLN4qAJGz4vPlfr8CqU0vsDA3mJbKNE=

@@ -2,7 +2,6 @@ package dsn
 
 import (
 	"bytes"
-	"errors"
 	"fmt"
 	"net/url"
 	"strconv"
@@ -17,10 +16,10 @@ import (
 )
 
 var (
-	_             manager.DSNParser = (*EtcdDSNParser)(nil)
-	errInvalidDSN                   = errors.New("invalid dsn")
+	_ manager.DSNParser = (*EtcdDSNParser)(nil)
 )
 
+// EtcdDSNParser ...
 type EtcdDSNParser struct {
 }
 
@@ -28,10 +27,12 @@ func init() {
 	manager.Register(&EtcdDSNParser{})
 }
 
+// Scheme ...
 func (p *EtcdDSNParser) Scheme() string {
 	return "etcd"
 }
 
+// ParseDSN ...
 func (p *EtcdDSNParser) ParseDSN(dsn string) (cfg *manager.DSN, err error) {
 	u, err := url.Parse(dsn)
 	if err != nil || u.Host == "" {

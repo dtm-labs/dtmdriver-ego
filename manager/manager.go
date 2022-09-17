@@ -5,6 +5,7 @@ var (
 	m = make(map[string]DSNParser)
 )
 
+// Register ...
 func Register(b DSNParser) {
 	m[b.Scheme()] = b
 }
@@ -12,9 +13,8 @@ func Register(b DSNParser) {
 // Get returns the dsn builder registered with the given scheme.
 //
 // If no builder is register with the scheme, nil will be returned.
-func Get(scheme string) DSNParser {
-	if b, ok := m[scheme]; ok {
-		return b
-	}
-	return nil
+func get(scheme string) (b DSNParser, ok bool) {
+	b, ok = m[scheme]
+
+	return
 }

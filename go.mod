@@ -7,7 +7,7 @@ require (
 	github.com/dtm-labs/dtmdriver v0.0.6
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
-	github.com/gotomicro/ego v1.1.4
+	github.com/gotomicro/ego v1.1.5
 	github.com/gotomicro/ego-component/eetcd v0.2.3
 	github.com/gotomicro/ego-component/ek8s v0.2.3
 	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect

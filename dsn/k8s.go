@@ -18,6 +18,7 @@ var (
 	_ manager.DSNParser = (*K8sDSNParser)(nil)
 )
 
+// K8sDSNParser ...
 type K8sDSNParser struct {
 }
 
@@ -25,10 +26,12 @@ func init() {
 	manager.Register(&K8sDSNParser{})
 }
 
+// Scheme ...
 func (p *K8sDSNParser) Scheme() string {
 	return "k8s"
 }
 
+// ParseDSN ...
 func (p *K8sDSNParser) ParseDSN(dsn string) (cfg *manager.DSN, err error) {
 	u, err := url.Parse(dsn)
 	if err != nil || u.Host == "" {
