@@ -7,12 +7,12 @@ import (
 	"strings"
 
 	"github.com/dtm-labs/dtmdriver"
+	_ "github.com/dtm-labs/dtmdriver-ego/dsn"
+	"github.com/dtm-labs/dtmdriver-ego/manager"
 	"github.com/gotomicro/ego/client/egrpc/resolver"
 	"github.com/gotomicro/ego/core/constant"
 	"github.com/gotomicro/ego/core/eregistry"
 	"github.com/gotomicro/ego/server"
-	_ "github.com/vicnoah/dtmdriver-ego/dsn"
-	"github.com/vicnoah/dtmdriver-ego/manager"
 )
 
 const (
