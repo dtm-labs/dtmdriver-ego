@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	"github.com/BurntSushi/toml"
+	"github.com/dtm-labs/dtmdriver-ego/manager"
 	"github.com/gotomicro/ego-component/ek8s"
 	"github.com/gotomicro/ego-component/ek8s/registry"
 	"github.com/gotomicro/ego/core/econf"
-	"github.com/vicnoah/dtmdriver-ego/manager"
 )
 
 var (

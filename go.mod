@@ -1,4 +1,4 @@
-module github.com/vicnoah/dtmdriver-ego
+module github.com/dtm-labs/dtmdriver-ego
 
 go 1.15
 
